@@ -1,0 +1,26 @@
+package opgave5;
+
+import java.util.ArrayList;
+
+public class SeriesApp {
+	public static void main(String[] args) {
+		ArrayList<String> cast = new ArrayList<String>();
+		cast.add("Simon Kvam");
+		cast.add("Esben Pretzman");
+		cast.add("Rune Tolsgaard");
+
+		Series series = new Series("Drengene fra Angora", cast);
+
+		ArrayList<String> guestActors = new ArrayList<String>();
+		guestActors.add("Morten From");
+		guestActors.add("Peter Hansen");
+		guestActors.add("Champen over alle champs!");
+		series.createEpisode(1, guestActors, 20);
+		series.createEpisode(2, guestActors, 24);
+
+		System.out.println(series.getTitle());
+		System.out.println(series.totalLenght());
+		System.out.println(series.getGuestActors());
+
+	}
+}

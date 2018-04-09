@@ -1,0 +1,39 @@
+package opgave1;
+
+import java.util.ArrayList;
+
+class Car {
+	private String license;
+	private double pricePerDay;
+	private int purchaseYear;
+	private ArrayList<Rental> rentals = new ArrayList<Rental>();
+
+	public Car(String license, int year) {
+		// TODO Auto-generated constructor stub
+		this.license = license;
+		this.purchaseYear = year;
+	}
+
+	public void addRental(Rental rental) {
+		rentals.add(rental)
+
+	}
+	
+	public void setDayPrice(double price) {
+		// TODO Auto-generated method stub
+		this.pricePerDay = price;
+	}
+
+	public double getDayPrice() {
+		// TODO Auto-generated method stub
+		return pricePerDay;
+	}
+
+	public String getLicense() {
+		return license;
+	}
+
+	public int getPurchaseYear() {
+		return purchaseYear;
+	}
+}

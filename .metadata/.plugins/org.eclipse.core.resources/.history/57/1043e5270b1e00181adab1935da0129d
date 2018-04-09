@@ -1,0 +1,64 @@
+package opgave5og6;
+
+public class Institution {
+	private String name;
+	private String address;
+	private Child[] childArray;
+	private int howManyChildren = 0;
+	private double gennemsnitsalder = 0;
+
+	public Institution(String name, String address) {
+		this.name = name;
+		this.address = address;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public void addChild(Child child) {
+
+		childArray[howManyChildren] = child;
+		howManyChildren++;
+	}
+
+	public double gennemsnitsalder() {
+		for (int i = 0; i < childArray.length; i++) {
+			gennemsnitsalder += childArray[i].getAge();
+		}
+		return gennemsnitsalder / childArray.length;
+	}
+
+	public int girlsCount() {
+		int count = 0;
+		for (int i = 0; i < childArray.length; i++) {
+			if (childArray[i].isBoy() == false) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+	public int boysCount() {
+		int count = 0;
+		for (int i = 0; i < childArray.length; i++) {
+			if (childArray[i].isBoy() == true) {
+				count++;
+			}
+		}
+		return count;
+	}
+
+}

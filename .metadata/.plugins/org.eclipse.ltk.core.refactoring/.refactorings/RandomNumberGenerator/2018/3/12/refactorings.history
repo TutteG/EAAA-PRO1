@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Rand.java&apos; to &apos;Projekt3-Yatzy/src/yatzy&apos;&#x0D;&#x0A;- Original project: &apos;RandomNumberGenerator&apos;&#x0D;&#x0A;- Destination element: &apos;Projekt3-Yatzy/src/yatzy&apos;&#x0D;&#x0A;- Original element: &apos;rand.Rand.java&apos;" description="Copy compilation unit" destination="=Projekt3-Yatzy/src&lt;yatzy" element1="/src&lt;rand{Rand.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1521449082884" units="1" version="1.0"/>
+</session>

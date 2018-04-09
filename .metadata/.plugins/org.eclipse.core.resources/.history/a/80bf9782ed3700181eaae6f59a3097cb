@@ -1,0 +1,11 @@
+package opgave5;
+
+import java.util.ArrayList;
+
+class Episode {
+	private int number;
+	private ArrayList<String> guestActors;
+	private int lengthMinutes;
+	
+	
+}

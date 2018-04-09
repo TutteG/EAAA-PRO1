@@ -1,0 +1,12 @@
+package opgave2;
+
+class Gift {
+	private String description;
+	private double price;
+
+	public Gift() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

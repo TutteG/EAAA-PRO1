@@ -1,0 +1,33 @@
+package opgave5og6;
+
+public class ChildApp {
+
+	public static void main(String[] args) {
+		Child child = new Child(2, false);
+		System.out.println(String.format("Alder: %s", child.getAge()));
+		String inst = child.institution();
+		System.out.println(String.format("Institution: %s", inst));
+		double[] arrayWeight = new double[] { 4.2, 9.3, 12.4, 17.5, 23.2, 25.3, 28.6, 30.4, 33.9, 35.1, 37.3 };
+		child = new Child(2, false, arrayWeight);
+		Child child1 = new Child(2, true, arrayWeight);
+		Child child2 = new Child(3, false, arrayWeight);
+		Child child3 = new Child(4, true, arrayWeight);
+		Child child4 = new Child(5, false, arrayWeight);
+
+		System.out.println(child.getWeight(5));
+		System.out.println(child.getBiggestWeightGain());
+		
+		Institution elmegaarden = new Institution("Elmegården", "Elmevej 10");
+		elmegaarden.addChild(child);
+		elmegaarden.addChild(child1);
+		elmegaarden.addChild(child2);
+		elmegaarden.addChild(child3);
+		elmegaarden.addChild(child4);
+		elmegaarden.getAddress();
+		elmegaarden.getName();
+		
+		System.out.println("Drenge i børnehaven: " + elmegaarden.boysCount());
+
+	}
+
+}

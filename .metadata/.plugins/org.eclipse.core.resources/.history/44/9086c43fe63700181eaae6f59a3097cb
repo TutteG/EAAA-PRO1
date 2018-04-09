@@ -1,0 +1,12 @@
+package opgave3;
+
+public class RentalApp {
+	public static void main(String[] args) {
+		Car car1 = new Car("asdf", 1996);
+		Car car2 = new Car("ghjk", 1997);
+		Car car3 = new Car("læø", 1998);
+		Car car4 = new Car("zxcv", 1999);
+		Car car5 = new Car("bnm", 2000);
+		
+	}
+}
