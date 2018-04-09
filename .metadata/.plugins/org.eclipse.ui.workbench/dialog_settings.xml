@@ -43,6 +43,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="true" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Torbe\Downloads\Architecture1stSem.jar"/>
 			<item value="C:\Users\Torbe\Downloads\swimmeropg.jar"/>
 			<item value="D:\yatzy\Yatzy.jar"/>
 			<item value="C:\Users\Torbe\Downloads\Yatzy.jar"/>

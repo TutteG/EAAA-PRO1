@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Lektion1-HelloWorld/src/Exercise118.java"/>
+<listEntry value="/Lektion02-HelloWorld/src/Exercise118.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Exercise118"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lektion1-HelloWorld"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lektion02-HelloWorld"/>
 </launchConfiguration>
