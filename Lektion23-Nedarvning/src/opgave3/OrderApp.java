@@ -17,25 +17,26 @@ public class OrderApp {
 		Order order2 = new Order(2);
 		Order order3 = new Order(3);
 		Order order4 = new Order(4);
-		Order order5 = new Order(5);
-		Order order6 = new Order(6);
-		Order order7 = new Order(7);
-		Order order8 = new Order(8);
-		Order order9 = new Order(9);
-		Order order10 = new Order(10);
-		Order order11 = new Order(11);
+		order1.createOrderLine(1, product1);
+		order1.createOrderLine(1, product2);
+		order1.createOrderLine(1, product3);
+		order1.createOrderLine(1, product4);
+		order1.createOrderLine(1, product5);
 
 		customer1.addOrder(order1);
-		customer1.addOrder(order2);
-		customer1.addOrder(order3);
-		customer1.addOrder(order4);
-		customer1.addOrder(order5);
-		customer1.addOrder(order6);
-		customer2.addOrder(order7);
-		customer2.addOrder(order8);
-		customer2.addOrder(order9);
-		customer2.addOrder(order10);
-		customer2.addOrder(order11);
+		// customer1.addOrder(order2);
+		customer2.addOrder(order1);
+		// customer2.addOrder(order2);
+		// customer2.addOrder(order3);
+		// customer2.addOrder(order4);
+		System.out.println(order1.getOrderPrice());
+
+		PercentDiscount percentDiscount = new PercentDiscount(order1.getOrderPrice(), 50);
+		FixedDiscount discount = new FixedDiscount(order1.getOrderPrice(), 10);
+		customer1.setDiscount(discount);
+		customer2.setDiscount(percentDiscount);
+		System.out.println(customer1.getDiscountedPrice(order1));
+		System.out.println(customer2.getDiscountedPrice(order2));
 
 	}
 }

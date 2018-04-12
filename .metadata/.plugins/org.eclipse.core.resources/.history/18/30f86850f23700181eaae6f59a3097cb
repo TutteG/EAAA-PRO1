@@ -1,7 +1,0 @@
-package opgave5;
-
-public class SeriesApp {
-	public static void main(String[] args) {
-
-	}
-}
