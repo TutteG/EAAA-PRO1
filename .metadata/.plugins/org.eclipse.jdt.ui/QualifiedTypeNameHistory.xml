@@ -58,6 +58,6 @@
 <fullyQualifiedTypeName name="opgave3.OrderLine"/>
 <fullyQualifiedTypeName name="opgave3.PercentDiscount"/>
 <fullyQualifiedTypeName name="opgave3.FixedDiscount"/>
-<fullyQualifiedTypeName name="opgave3.Discount"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="opgave3.Discount"/>
 </qualifiedTypeNameHistroy>
