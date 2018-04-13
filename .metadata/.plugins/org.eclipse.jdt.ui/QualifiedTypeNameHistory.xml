@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
-<fullyQualifiedTypeName name="yatzy.Rand"/>
-<fullyQualifiedTypeName name="com.sun.org.apache.xpath.internal.operations.String"/>
 <fullyQualifiedTypeName name="yatzy.Yatzy"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
@@ -48,7 +45,6 @@
 <fullyQualifiedTypeName name="opgave1.Værkfører"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="opgave2.PersonApp"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="opgave2.Mekaniker"/>
 <fullyQualifiedTypeName name="opgave2.Synsmand"/>
 <fullyQualifiedTypeName name="opgave3.Product"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="opgave3.FixedDiscount"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="opgave3.Discount"/>
+<fullyQualifiedTypeName name="com.sun.scenario.effect.impl.prism.ps.PPSBlend_ADDPeer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="opgave3.Ansat"/>
+<fullyQualifiedTypeName name="opgave3.StableBoy"/>
 </qualifiedTypeNameHistroy>
