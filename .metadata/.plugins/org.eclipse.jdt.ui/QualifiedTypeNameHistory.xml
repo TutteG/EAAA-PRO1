@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="yatzy.Yatzy"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Alert"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Alert.AlertType"/>
-<fullyQualifiedTypeName name="javafx.scene.text.Font"/>
-<fullyQualifiedTypeName name="javax.swing.GroupLayout.Alignment"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="model.TrainingPlan"/>
-<fullyQualifiedTypeName name="opgave2.Swimmer"/>
-<fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
 <fullyQualifiedTypeName name="opgave3.Rental"/>
 <fullyQualifiedTypeName name="opgave3.Car"/>
 <fullyQualifiedTypeName name="opgave4.Swimmer"/>
@@ -48,16 +39,25 @@
 <fullyQualifiedTypeName name="opgave2.Mekaniker"/>
 <fullyQualifiedTypeName name="opgave2.Synsmand"/>
 <fullyQualifiedTypeName name="opgave3.Product"/>
-<fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="opgave3.Customer"/>
 <fullyQualifiedTypeName name="opgave3.Order"/>
 <fullyQualifiedTypeName name="opgave3.OrderLine"/>
 <fullyQualifiedTypeName name="opgave3.PercentDiscount"/>
 <fullyQualifiedTypeName name="opgave3.FixedDiscount"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="opgave3.Discount"/>
 <fullyQualifiedTypeName name="com.sun.scenario.effect.impl.prism.ps.PPSBlend_ADDPeer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="opgave3.Ansat"/>
 <fullyQualifiedTypeName name="opgave3.StableBoy"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="opgave4.Figur"/>
+<fullyQualifiedTypeName name="opgave4.Kvadrat"/>
+<fullyQualifiedTypeName name="opgave4.Rektangel"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="Opgave5.Vare"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="opgave5.Vare"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="opgave5.ElArtikel"/>
+<fullyQualifiedTypeName name="opgave5.Spiritus"/>
+<fullyQualifiedTypeName name="opgave5.IndkøbsApp"/>
 </qualifiedTypeNameHistroy>
