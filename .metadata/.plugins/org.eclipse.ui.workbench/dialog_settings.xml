@@ -43,6 +43,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="true" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Torbe\Downloads\Question.jar"/>
 			<item value="C:\Users\Torbe\Downloads\MiniOrderSystem.jar"/>
 			<item value="C:\Users\Torbe\Downloads\Architecture1stSem.jar"/>
 			<item value="C:\Users\Torbe\Downloads\swimmeropg.jar"/>
@@ -62,7 +63,6 @@
 			<item value="C:\Users\Torbe\Downloads\person.jar"/>
 			<item value="C:\Users\Torbe\Downloads\eksemplerIf.jar"/>
 			<item value="C:\Users\Torbe\Downloads\cars.jar"/>
-			<item value="C:\Users\Torbe\Dropbox\EAAA-Datamatiker\Workspace\EclipseSW\Lektion3\src\ShapesStudent.jar"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">

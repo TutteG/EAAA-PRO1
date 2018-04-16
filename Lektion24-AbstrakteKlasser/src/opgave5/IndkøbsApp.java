@@ -17,6 +17,5 @@ public class IndkøbsApp {
 		kurv.addVare(fernet);
 		System.out.println(kurv.getTotalPrice());
 		kurv.printReceipt();
-
 	}
 }
