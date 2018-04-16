@@ -1,25 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="opgave3.Rental"/>
-<fullyQualifiedTypeName name="opgave3.Car"/>
-<fullyQualifiedTypeName name="opgave4.Swimmer"/>
-<fullyQualifiedTypeName name="org.omg.CORBA.MARSHAL"/>
-<fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthGraphicsUtils"/>
-<fullyQualifiedTypeName name="sun.security.util.Length"/>
-<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
-<fullyQualifiedTypeName name="opgave5.Episode"/>
-<fullyQualifiedTypeName name="opgave5.Series"/>
-<fullyQualifiedTypeName name="opgave1.Rental"/>
-<fullyQualifiedTypeName name="jdk.internal.org.objectweb.asm.tree.MethodInsnNode"/>
-<fullyQualifiedTypeName name="opgave1.Car"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="opgave2app.mainApp"/>
-<fullyQualifiedTypeName name="opgave2.Gift"/>
-<fullyQualifiedTypeName name="sun.net.www.content.image.gif"/>
-<fullyQualifiedTypeName name="opgave2.Person"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
 <fullyQualifiedTypeName name="storage.Storage"/>
 <fullyQualifiedTypeName name="application.service.Service"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
@@ -60,4 +40,24 @@
 <fullyQualifiedTypeName name="opgave5.ElArtikel"/>
 <fullyQualifiedTypeName name="opgave5.Spiritus"/>
 <fullyQualifiedTypeName name="opgave5.IndkøbsApp"/>
+<fullyQualifiedTypeName name="opgave4v2.Figur"/>
+<fullyQualifiedTypeName name="sun.security.util.Length"/>
+<fullyQualifiedTypeName name="opgave4v2.Ellipse"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
+<fullyQualifiedTypeName name="opgave1.Chili"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Array"/>
+<fullyQualifiedTypeName name="opgave1.Measurable"/>
+<fullyQualifiedTypeName name="opgave1.Data"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.spi.activation.InitialNameServicePackage.NameAlreadyBound"/>
+<fullyQualifiedTypeName name="opgave2.Customer"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="opgave4.Measurable"/>
+<fullyQualifiedTypeName name="opgave4.Filter"/>
+<fullyQualifiedTypeName name="opgave4.Chili"/>
+<fullyQualifiedTypeName name="opgave4.ChiliFilter"/>
+<fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
+<fullyQualifiedTypeName name="opgave3.AgeDiscount"/>
 </qualifiedTypeNameHistroy>
