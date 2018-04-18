@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="storage.Storage"/>
-<fullyQualifiedTypeName name="application.service.Service"/>
-<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
-<fullyQualifiedTypeName name="javafx.scene.control.ListView"/>
-<fullyQualifiedTypeName name="javafx.scene.control.TextArea"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 <fullyQualifiedTypeName name="application.model.Customer"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
@@ -32,9 +26,7 @@
 <fullyQualifiedTypeName name="opgave4.Figur"/>
 <fullyQualifiedTypeName name="opgave4.Kvadrat"/>
 <fullyQualifiedTypeName name="opgave4.Rektangel"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="Opgave5.Vare"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="opgave5.Vare"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
 <fullyQualifiedTypeName name="opgave5.ElArtikel"/>
@@ -50,7 +42,6 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="opgave1.Measurable"/>
 <fullyQualifiedTypeName name="opgave1.Data"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.spi.activation.InitialNameServicePackage.NameAlreadyBound"/>
 <fullyQualifiedTypeName name="opgave2.Customer"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -60,4 +51,13 @@
 <fullyQualifiedTypeName name="opgave4.ChiliFilter"/>
 <fullyQualifiedTypeName name="javafx.geometry.Orientation"/>
 <fullyQualifiedTypeName name="opgave3.AgeDiscount"/>
+<fullyQualifiedTypeName name="sun.security.provider.ConfigFile.Spi"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="opgave4.Spiller"/>
+<fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="opgave5.HeltalsKvadratroden"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

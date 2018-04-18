@@ -14,7 +14,7 @@ public class OrderApp {
 		Customer customer2 = new Customer("Martin", LocalDate.parse("1984-01-01"));
 
 		Order order1 = new Order(1);
-		Order order2 = new Order(2);
+		// Order order2 = new Order(2);
 
 		order1.createOrderLine(1, product1);
 		order1.createOrderLine(1, product2);

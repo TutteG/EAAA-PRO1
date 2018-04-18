@@ -16,7 +16,7 @@ public class OrderApp {
 		System.out.println(age);
 
 		Order order1 = new Order(1);
-		Order order2 = new Order(2);
+		// Order order2 = new Order(2);
 
 		order1.createOrderLine(1, product1);
 		order1.createOrderLine(1, product2);
