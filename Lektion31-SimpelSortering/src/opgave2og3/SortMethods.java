@@ -35,6 +35,7 @@ public class SortMethods {
 		}
 	}
 
+	// Omvendt bubblesort??
 	public static void selectionSort(String[] array) {
 		// TODO:
 		for (int i = 0; i < array.length - 1; i++) {

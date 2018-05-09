@@ -1,6 +1,7 @@
 package opgave2og3;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class SelectionSort {
 	public static String[] stringSelectionSort(String[] strings) {
@@ -20,11 +21,11 @@ public class SelectionSort {
 		for (int i = 0; i < customers.size() - 1; i++) {
 			for (int j = i + 1; j < customers.size(); j++) {
 				if (customers.get(i).compareTo(customers.get(j)) > 0) {
-					Customer temp = customers.get(j);
-					customers.set(j, customers.get(i));
-					customers.set(i, temp);
+					// Customer temp = customers.get(j);
+					// customers.set(j, customers.get(i));
+					// customers.set(i, temp);
 
-					// Collections.swap(customers, i, j);
+					Collections.swap(customers, i, j);
 				}
 			}
 		}

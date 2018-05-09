@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="application.model.Company"/>
-<fullyQualifiedTypeName name="opgave1.Person"/>
 <fullyQualifiedTypeName name="opgave1.Mekaniker"/>
 <fullyQualifiedTypeName name="opgave1.Værkfører"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -58,6 +56,8 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="opgave2.Customer"/>
 <fullyQualifiedTypeName name="opgave2.SelectionSort"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="opgave1.Customer"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="sun.nio.cs.ext.ISCII91"/>
 </qualifiedTypeNameHistroy>
