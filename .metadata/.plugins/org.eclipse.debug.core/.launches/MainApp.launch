@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Lektion21-Klassesammenhænge2/src/opgave2app/mainApp.java"/>
+<listEntry value="/Lektion33-Exceptions/src/opgave1/mainApp.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="opgave2app.mainApp"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lektion21-Klassesammenhænge2"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="opgave1.mainApp"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Lektion33-Exceptions"/>
 </launchConfiguration>

@@ -1,16 +1,28 @@
 package opgave2;
 
-import java.util.ArrayList;
-
 public class Insert {
-	public static void insertCustomer(ArrayList<Customer> customers, Customer customer) {
+	public static void insertCustomer(Customer[] customers, Customer customer) {
 		boolean found = false;
-		for (int i = 0; i < customers.size() && !found; i++) {
-			if (customer.compareTo(customers.get(i)) < 0) {
-				customers.add(i, customer);
+		int index = -1;
+
+		for (int i = 0; i < customers.length - 1; i++) {
+			if (customers[i] != null) {
+				index = i + 1;
 				found = true;
-				// break;
 			}
+		}
+
+		if (index != -1) {
+			found = false;
+			while (!found && index > 0) {
+				if (customer.compareTo(customers[index - 1]) > 0) {
+					found = true;
+				} else {
+					customers[index] = customers[index - 1];
+					index--;
+				}
+			}
+			customers[index] = customer;
 		}
 	}
 
@@ -45,7 +57,7 @@ public class Insert {
 		Customer c6 = new Customer("Sloth Stræde", "Frederik", 24);
 		Customer c7 = new Customer("Steinmeier", "Tom", 27);
 
-		Customer[] customers = { c1, c2, c3, c4, c5, c6, c7, null };
+		Customer[] customers = { c1, c2, c3, c4, c5, c6, c7, null, null };
 		for (int i = 0; i < customers.length; i++) {
 			System.out.print(customers[i] + " ");
 		}
@@ -58,7 +70,11 @@ public class Insert {
 
 		System.out.println(customers);
 		Customer c8 = new Customer("Andersen", "Anders", 27);
-		// Insert.insertCustomer(customers, c8);
-		System.out.println(customers);
+		Insert.insertCustomer(customers, c8);
+
+		for (int i = 0; i < customers.length; i++) {
+			System.out.println(customers[i] + " ");
+		}
+
 	}
 }

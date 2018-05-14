@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="opgave1.Mekaniker"/>
-<fullyQualifiedTypeName name="opgave1.Værkfører"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="opgave2.PersonApp"/>
-<fullyQualifiedTypeName name="opgave2.Mekaniker"/>
-<fullyQualifiedTypeName name="opgave2.Synsmand"/>
-<fullyQualifiedTypeName name="opgave3.Product"/>
-<fullyQualifiedTypeName name="opgave3.Customer"/>
-<fullyQualifiedTypeName name="opgave3.Order"/>
-<fullyQualifiedTypeName name="opgave3.OrderLine"/>
-<fullyQualifiedTypeName name="opgave3.PercentDiscount"/>
-<fullyQualifiedTypeName name="opgave3.FixedDiscount"/>
-<fullyQualifiedTypeName name="opgave3.Discount"/>
 <fullyQualifiedTypeName name="com.sun.scenario.effect.impl.prism.ps.PPSBlend_ADDPeer"/>
 <fullyQualifiedTypeName name="opgave3.Ansat"/>
 <fullyQualifiedTypeName name="opgave3.StableBoy"/>
@@ -30,7 +17,6 @@
 <fullyQualifiedTypeName name="sun.security.util.Length"/>
 <fullyQualifiedTypeName name="opgave4v2.Ellipse"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
 <fullyQualifiedTypeName name="opgave1.Chili"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
@@ -53,11 +39,25 @@
 <fullyQualifiedTypeName name="opgave5.HeltalsKvadratroden"/>
 <fullyQualifiedTypeName name="opgave1.BubbleSort"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.ws.message.stream.StreamAttachment"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="opgave2.Customer"/>
 <fullyQualifiedTypeName name="opgave2.SelectionSort"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="opgave1.Customer"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="sun.nio.cs.ext.ISCII91"/>
+<fullyQualifiedTypeName name="java.util.InputMismatchException"/>
+<fullyQualifiedTypeName name="jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode"/>
+<fullyQualifiedTypeName name="java.lang.IndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="opgave1.mainApp"/>
+<fullyQualifiedTypeName name="opgave2.p104"/>
+<fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="opgave2.p105"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
