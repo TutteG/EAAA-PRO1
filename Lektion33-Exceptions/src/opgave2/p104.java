@@ -29,7 +29,7 @@ public class p104 {
 				System.out.println("Line " + line + ": " + (num / i));
 				line++;
 			}
-
+			sc.close();
 		} catch (FileNotFoundException e) {
 			// TODO: handle exception
 			System.out.println("file not found");

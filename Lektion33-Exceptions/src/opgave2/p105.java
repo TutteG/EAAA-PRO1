@@ -23,6 +23,7 @@ public class p105 {
 					String input = sc.nextLine();
 					System.out.println(input);
 				}
+				sc.close();
 				String chars = "";
 
 				sc = new Scanner(file);
@@ -30,7 +31,7 @@ public class p105 {
 					chars += sc.next();
 				}
 				System.out.println("Antal karakterer i fil: 	" + chars.length());
-
+				sc.close();
 				sc = new Scanner(file);
 				ArrayList<String> words = new ArrayList<String>();
 				while (sc.hasNext()) {
