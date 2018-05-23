@@ -10,6 +10,10 @@ public class PercentDiscount implements Discount {
 		this.percent = 0;
 	}
 
+	public double getOriginalPrice() {
+		return originalPrice;
+	}
+
 	public int getPercent() {
 		return percent;
 	}

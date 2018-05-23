@@ -25,7 +25,7 @@ public class CelsiusFahrenheit extends Application {
 		stage.show();
 	}
 
-	private Controller controller = new Controller();
+	// private Controller controller = new Controller();
 	Button buttonUp = new Button();
 	TextField number = new TextField();
 	private boolean fahrenheit = false;
@@ -61,7 +61,7 @@ public class CelsiusFahrenheit extends Application {
 	 * This class controls access to the model in this application. In this case,
 	 * the model is a single Student object.
 	 */
-	private class Controller {
-	}
+	// private class Controller {
+	// }
 
 }

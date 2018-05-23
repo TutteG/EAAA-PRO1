@@ -25,7 +25,7 @@ public class Opgave2TextSwap extends Application {
 		stage.show();
 	}
 
-	private Controller controller = new Controller();
+	// private Controller controller = new Controller();
 	Button swap = new Button();
 	TextField firstText = new TextField();
 	TextField lastText = new TextField();
@@ -55,7 +55,7 @@ public class Opgave2TextSwap extends Application {
 	 * This class controls access to the model in this application. In this case,
 	 * the model is a single Student object.
 	 */
-	private class Controller {
-	}
+	// private class Controller {
+	// }
 
 }

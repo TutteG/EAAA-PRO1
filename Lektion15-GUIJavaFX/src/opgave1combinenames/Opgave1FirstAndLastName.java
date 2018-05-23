@@ -26,7 +26,7 @@ public class Opgave1FirstAndLastName extends Application {
 		stage.show();
 	}
 
-	private Controller controller = new Controller();
+	// private Controller controller = new Controller();
 	Button combine = new Button();
 	Text firstName = new Text();
 	Text lastName = new Text();
@@ -62,7 +62,7 @@ public class Opgave1FirstAndLastName extends Application {
 	 * This class controls access to the model in this application. In this case,
 	 * the model is a single Student object.
 	 */
-	private class Controller {
-	}
+	// private class Controller {
+	// }
 
 }

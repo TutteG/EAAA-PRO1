@@ -37,6 +37,8 @@ public class BarChart {
 	 */
 	public void printBarChart() {
 		int max = findMax(this.list);
+		// noget skal ske...
+		System.out.println(max);
 		// TODO: print out bar chart
 	}
 }

@@ -3,7 +3,6 @@ package opgave3;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.GridPane;
@@ -34,10 +33,10 @@ public class PersonAdministrationSystem extends Application {
 	private Button btnAddPerson;
 	// private CheckBox chbxSenior = new CheckBox();
 	private ListView<Person> lstvPerson;
-	private Person person;
-	private Alert alarm;
-	private Button btnOK;
-	private Button btnCancel;
+	// private Person person;
+	// private Alert alarm;
+	// private Button btnOK;
+	// private Button btnCancel;
 	private PersonInputWindow pInWin;
 
 	private void initContent(GridPane pane) {

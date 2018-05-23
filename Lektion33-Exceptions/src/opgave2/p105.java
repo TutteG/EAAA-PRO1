@@ -41,6 +41,7 @@ public class p105 {
 				System.out.println("Antal linjer i fil: 		" + lines);
 				found = true;
 				sc.close();
+				in.close();
 			} catch (FileNotFoundException e) {
 				// TODO: handle exception
 				System.out.println("file not found " + e.getMessage());

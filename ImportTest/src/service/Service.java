@@ -50,18 +50,18 @@ public class Service {
 		Vare v4 = createVare("Øl", "Carlsberg", 0.57, 48);
 
 		Gæst g1 = createGæst("Ib", 17);
-		createGæst("Eva", 12);
-		createGæst("Lene", 8);
+		Gæst g2 = createGæst("Eva", 12);
+		Gæst g3 = createGæst("Lene", 8);
 
 		Bestilling bestilling1 = createBestilling(LocalDate.of(2014, 6, 15));
-		createBestillingsLinje(3, v3, bestilling1);
-		createBestillingsLinje(2, v1, bestilling1);
-		createBestillingsLinje(2, v2, bestilling1);
+		BestillingsLinje bestillingsLinje1 = createBestillingsLinje(3, v3, bestilling1);
+		BestillingsLinje bestillingsLinje2 = createBestillingsLinje(2, v1, bestilling1);
+		BestillingsLinje bestillingsLinje3 = createBestillingsLinje(2, v2, bestilling1);
 
 		Bestilling bestilling2 = createBestilling(LocalDate.of(2014, 6, 16));
-		createBestillingsLinje(2, v3, bestilling2);
-		createBestillingsLinje(3, v2, bestilling2);
-		createBestillingsLinje(4, v4, bestilling2);
+		BestillingsLinje bestillingsLinje4 = createBestillingsLinje(2, v3, bestilling2);
+		BestillingsLinje bestillingsLinje5 = createBestillingsLinje(3, v2, bestilling2);
+		BestillingsLinje bestillingsLinje6 = createBestillingsLinje(4, v4, bestilling2);
 
 		bestilling2.setBetalt(true);
 		g1.addBestilling(bestilling1);

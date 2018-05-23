@@ -40,7 +40,8 @@ public class PersonInputWindow extends Stage {
 	private Alert alarm;
 	private Button btnOK;
 	private Button btnCancel;
-	private PersonAdministrationSystem psnAdmin = new PersonAdministrationSystem();
+	// private PersonAdministrationSystem psnAdmin = new
+	// PersonAdministrationSystem();
 
 	private void initContent(GridPane pane) {
 		// pane.setGridLinesVisible(true);

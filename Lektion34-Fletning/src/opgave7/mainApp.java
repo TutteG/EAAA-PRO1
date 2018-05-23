@@ -12,7 +12,7 @@ public class mainApp {
 		try (Scanner sc = new Scanner(file)) {
 			while (sc.hasNextLine() && !found) {
 				Scanner sc2 = new Scanner(sc.nextLine());
-				int id = Integer.parseInt(sc2.next());
+				// int id = Integer.parseInt(sc2.next());
 				String firstName = sc2.next();
 				String lastName = sc2.next();
 				if (lastName.equals(target)) {
