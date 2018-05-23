@@ -1,6 +1,7 @@
 package service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import DAO.DAO;
 import model.Bestilling;
@@ -9,6 +10,11 @@ import model.Gæst;
 import model.Vare;
 
 public class Service {
+	public static ArrayList<Gæst> getGæster() {
+		// TODO Auto-generated method stub
+		return DAO.getGæster();
+	}
+
 	public static Gæst createGæst(String navn, int værelsesNummer) {
 		Gæst gæst = new Gæst(navn, værelsesNummer);
 		DAO.addGæst(gæst);

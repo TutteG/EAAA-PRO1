@@ -5,6 +5,8 @@ import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -63,7 +65,7 @@ public class guiApp extends Application {
 		gridPane.add(lblGæster, 0, 0);
 
 		lvGæster = new ListView<Gæst>();
-		lvGæster.getItems().setAll(DAO.getGæster());
+		lvGæster.getItems().setAll(Service.getGæster());
 		lvGæster.setMinHeight(300);
 		gridPane.add(lvGæster, 0, 1, 1, 4);
 
@@ -95,9 +97,12 @@ public class guiApp extends Application {
 
 		btnVis = GUITools.stdButton("Vis");
 		gridPane.add(btnVis, 2, 3);
+
 		// --------------------Collumn 3-----------------//
 		lvIkkeBetalteBestillinger = new ListView<String>();
 		gridPane.add(lvIkkeBetalteBestillinger, 2, 4);
+
+		// -----------------Eventhandlers----------------//
 
 		btnOpret.setOnAction(event -> addGuest());
 		btnOpdater.setOnAction(event -> updateGuest());
@@ -106,33 +111,46 @@ public class guiApp extends Application {
 	}
 
 	private void addGuest() {
-		// TODO Auto-generated method stub
 		try {
-			Service.createGæst(txfGæsteNavn.getText(), Integer.parseInt(txfVærelsesNummer.getText()));
-			lvGæster.getItems().setAll(DAO.getGæster());
+			System.out.println(DAO.getGæster());
+			if (txfGæsteNavn.getText().length() > 0 || txfVærelsesNummer.getText().length() > 0) {
+				Service.createGæst(txfGæsteNavn.getText(), Integer.parseInt(txfVærelsesNummer.getText()));
+				lvGæster.getItems().setAll(Service.getGæster());
+			}
 		} catch (NumberFormatException e) {
 			// TODO: handle exception
-			System.out.println("Skriv venligst et tal: " + e.getMessage());
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Nullpointer Exception");
+			alert.setContentText("Skriv venligst et tal i værelsesnummer - " + e.getMessage());
+			alert.showAndWait();
 		}
 	}
 
 	private void updateGuest() {
-		// TODO Auto-generated method stub
 		try {
-			Service.updateGæst(txfGæsteNavn.getText(), Integer.parseInt(txfVærelsesNummer.getText()),
-					lvGæster.getSelectionModel().getSelectedItem());
-			lvGæster.getItems().setAll(DAO.getGæster());
+			if (txfGæsteNavn.getText().length() > 0 || txfVærelsesNummer.getText().length() > 0) {
+				Service.updateGæst(txfGæsteNavn.getText(), Integer.parseInt(txfVærelsesNummer.getText()),
+						lvGæster.getSelectionModel().getSelectedItem());
+				lvGæster.getItems().setAll(Service.getGæster());
+			}
 		} catch (NumberFormatException e) {
-			// TODO: handle exception
-			System.out.println("Skriv venligst et tal: " + e.getMessage());
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Nullpointer Exception");
+			alert.setContentText("Skriv venligst et tal i værelsesnummer - " + e.getMessage());
+			alert.showAndWait();
 		}
-
 	}
 
 	private void showGuest() {
-		// TODO Auto-generated method stub
-		lvIkkeBetalteBestillinger.getItems()
-				.setAll(lvGæster.getSelectionModel().getSelectedItem().ikkeBetalteBestillinger());
+		try {
+			lvIkkeBetalteBestillinger.getItems()
+					.setAll(lvGæster.getSelectionModel().getSelectedItem().ikkeBetalteBestillinger());
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Nullpointer Exception");
+			alert.setContentText("Vælg venligst en gæst fra listen - " + e.getMessage());
+			alert.showAndWait();
+		}
 	}
-
 }

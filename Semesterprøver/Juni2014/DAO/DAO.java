@@ -10,11 +10,11 @@ public class DAO {
 	public static ArrayList<Gæst> gæster = new ArrayList<Gæst>();
 
 	public static ArrayList<Vare> getVarer() {
-		return varer;
+		return new ArrayList<>(varer);
 	}
 
 	public static ArrayList<Gæst> getGæster() {
-		return gæster;
+		return new ArrayList<>(gæster);
 	}
 
 	public static void addVare(Vare vare) {
