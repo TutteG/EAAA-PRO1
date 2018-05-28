@@ -43,6 +43,7 @@
 	<section name="ZipFileImportWizard">
 		<item value="true" key="WizardZipFileResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardZipFileResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\Torbe\Downloads\enumeksempel.jar"/>
 			<item value="C:\Users\Torbe\Desktop\Discount.jar"/>
 			<item value="C:\Users\Torbe\Desktop\Semesterprøver.jar"/>
 			<item value="C:\Users\Torbe\Downloads\MeasureSort.jar"/>
@@ -62,7 +63,6 @@
 			<item value="C:\Users\Torbe\Downloads\afleveringarray.jar"/>
 			<item value="C:\Users\Torbe\Downloads\arraysDobbel.jar"/>
 			<item value="C:\Users\Torbe\Downloads\ArrayListMethods.jar"/>
-			<item value="C:\Users\Torbe\Downloads\Die.jar"/>
 		</list>
 	</section>
 	<section name="FileSystemImportWizard">

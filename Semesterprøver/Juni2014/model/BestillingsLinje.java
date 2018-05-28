@@ -25,6 +25,6 @@ public class BestillingsLinje {
 	}
 
 	public double pris() {
-		return vare.getPris() * vare.getMængde();
+		return vare.getPris() * antal;
 	}
 }
