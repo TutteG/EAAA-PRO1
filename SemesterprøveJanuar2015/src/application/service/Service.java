@@ -29,6 +29,12 @@ public class Service {
 		return kamp;
 	}
 
+	public static void updateKamp(Kamp kamp, String spillested, LocalDate spilleDato, LocalTime spilleTid) {
+		kamp.setSted(spillested);
+		kamp.setDato(spilleDato);
+		kamp.setTid(spilleTid);
+	}
+
 	public static Deltagelse createDeltagelse(String begrundelse) {
 		Deltagelse deltagelse = new Deltagelse(begrundelse);
 		return deltagelse;
@@ -44,6 +50,10 @@ public class Service {
 			spiller.addDeltagelse(deltagelse);
 			deltagelse.setSpiller(spiller);
 		}
+	}
+
+	public static void lavSpillerHonorarFil(Kamp kamp) {
+		kamp.spillerHonorar("SpillerHonorar.txt");
 	}
 
 	public static ArrayList<Kamp> alleKampe(ArrayList<Kamp> list1, ArrayList<Kamp> list2) {

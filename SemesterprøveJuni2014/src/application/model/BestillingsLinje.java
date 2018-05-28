@@ -1,4 +1,4 @@
-package model;
+package application.model;
 
 public class BestillingsLinje {
 	private int antal;

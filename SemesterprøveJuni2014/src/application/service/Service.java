@@ -1,23 +1,23 @@
-package service;
+package application.service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-import DAO.DAO;
-import model.Bestilling;
-import model.BestillingsLinje;
-import model.Gæst;
-import model.Vare;
+import application.model.Bestilling;
+import application.model.BestillingsLinje;
+import application.model.Gæst;
+import application.model.Vare;
+import storage.Storage;
 
 public class Service {
 	public static ArrayList<Gæst> getGæster() {
 		// TODO Auto-generated method stub
-		return DAO.getGæster();
+		return Storage.getGæster();
 	}
 
 	public static Gæst createGæst(String navn, int værelsesNummer) {
 		Gæst gæst = new Gæst(navn, værelsesNummer);
-		DAO.addGæst(gæst);
+		Storage.addGæst(gæst);
 		return gæst;
 	}
 
@@ -28,7 +28,7 @@ public class Service {
 
 	public static Vare createVare(String navn, String mærke, double mængde, double pris) {
 		Vare vare = new Vare(navn, mærke, mængde, pris);
-		DAO.addVare(vare);
+		Storage.addVare(vare);
 		return vare;
 	}
 

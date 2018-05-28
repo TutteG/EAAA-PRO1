@@ -116,6 +116,6 @@ public class Kamp implements Comparable<Kamp> {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return getSted() + "	" + getDato() + "	" + getTid();
+		return getSted() + "\t" + getDato() + "\t" + getTid();
 	}
 }

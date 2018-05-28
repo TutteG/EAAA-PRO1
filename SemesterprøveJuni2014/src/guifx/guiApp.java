@@ -1,6 +1,7 @@
-package gui;
+package guifx;
 
-import DAO.DAO;
+import application.model.Gæst;
+import application.service.Service;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -15,8 +16,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
-import model.Gæst;
-import service.Service;
+import storage.Storage;
 
 public class guiApp extends Application {
 	public static void main(String[] args) {
@@ -112,7 +112,7 @@ public class guiApp extends Application {
 
 	private void addGuest() {
 		try {
-			System.out.println(DAO.getGæster());
+			System.out.println(Storage.getGæster());
 			if (txfGæsteNavn.getText().length() > 0 || txfVærelsesNummer.getText().length() > 0) {
 				Service.createGæst(txfGæsteNavn.getText(), Integer.parseInt(txfVærelsesNummer.getText()));
 				lvGæster.getItems().setAll(Service.getGæster());

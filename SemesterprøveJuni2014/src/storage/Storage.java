@@ -1,11 +1,11 @@
-package DAO;
+package storage;
 
 import java.util.ArrayList;
 
-import model.Gæst;
-import model.Vare;
+import application.model.Gæst;
+import application.model.Vare;
 
-public class DAO {
+public class Storage {
 	public static ArrayList<Vare> varer = new ArrayList<Vare>();
 	public static ArrayList<Gæst> gæster = new ArrayList<Gæst>();
 

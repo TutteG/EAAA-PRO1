@@ -1,11 +1,18 @@
 package guifx;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.format.DateTimeParseException;
+
 import application.model.Kamp;
 import application.service.Service;
 import javafx.application.Application;
+import javafx.beans.value.ChangeListener;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -64,9 +71,11 @@ public class mainGUI extends Application {
 		gridPane.add(lblKampe, 0, 0);
 
 		lvKampe = new ListView<Kamp>();
-		lvKampe.getItems().setAll(Storage.getKampe());
+		// lvKampe.getItems().setAll(Storage.getKampe());
+		updateKampListe();
 		gridPane.add(lvKampe, 0, 1, 1, 4);
-
+		ChangeListener<Kamp> kampListener = (ov, oldValue, newValue) -> this.selectedKampChanged();
+		lvKampe.getSelectionModel().selectedItemProperty().addListener(kampListener);
 		// --------------------Collumn 1-----------------//
 		lblSpilleSted = new Label("Spillested:");
 		lblSpilleDato = new Label("Spilledato:");
@@ -82,6 +91,8 @@ public class mainGUI extends Application {
 		txfSpilleTid = GUITools.stdTextField();
 		btnOpret = GUITools.stdButton("Opret");
 		btnLavFil = GUITools.stdButton("Lav fil");
+		btnOpret.setOnAction(event -> opretAction());
+		btnLavFil.setOnAction(event -> lavFilAction());
 
 		gridPane.add(txfSpilleSted, 2, 0, 2, 1);
 		gridPane.add(txfSpilleDato, 2, 1, 2, 1);
@@ -91,6 +102,76 @@ public class mainGUI extends Application {
 
 		// --------------------Collumn 3-----------------//
 		btnOpdater = GUITools.stdButton("Opdater");
+		btnOpdater.setOnAction(event -> opdaterAction());
 		gridPane.add(btnOpdater, 3, 3);
+
+	}
+
+	private void selectedKampChanged() {
+		// TODO Auto-generated method stub
+		Kamp kamp = lvKampe.getSelectionModel().getSelectedItem();
+		if (kamp != null) {
+			txfSpilleSted.setText(kamp.getSted());
+			txfSpilleDato.setText(kamp.getDato().toString());
+			txfSpilleTid.setText(kamp.getTid().toString());
+		} else {
+			txfSpilleDato.clear();
+			txfSpilleSted.clear();
+			txfSpilleTid.clear();
+		}
+
+	}
+
+	private void opdaterAction() {
+		// TODO Auto-generated method stub
+		if (txfSpilleSted.getText().length() > 0 && txfSpilleDato.getText().length() > 0
+				&& txfSpilleTid.getText().length() > 0) {
+			try {
+				Service.updateKamp(lvKampe.getSelectionModel().getSelectedItem(), txfSpilleSted.getText(),
+						LocalDate.parse(txfSpilleDato.getText()), LocalTime.parse(txfSpilleTid.getText()));
+				updateKampListe();
+			} catch (NullPointerException e) {
+				// TODO: handle exception
+				Alert alert = new Alert(AlertType.WARNING);
+				alert.setTitle("Intet emne valgt");
+				alert.setContentText(e.getMessage());
+				alert.showAndWait();
+			} catch (DateTimeParseException e) {
+				// TODO: handle exception
+				System.out.println("Fejl i formatering af dato eller tid " + e.getMessage());
+			}
+		}
+	}
+
+	private void lavFilAction() {
+		// TODO Auto-generated method stub
+		try {
+			Service.lavSpillerHonorarFil(lvKampe.getSelectionModel().getSelectedItem());
+		} catch (NullPointerException e) {
+			// TODO: handle exception
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Intet emne valgt");
+			alert.setContentText(e.getMessage());
+			alert.showAndWait();
+		}
+	}
+
+	private void opretAction() {
+		// TODO Auto-generated method stub
+		if (txfSpilleSted.getText().length() > 0 && txfSpilleDato.getText().length() > 0
+				&& txfSpilleTid.getText().length() > 0) {
+			try {
+				Service.createKamp(txfSpilleSted.getText(), LocalDate.parse(txfSpilleDato.getText()),
+						LocalTime.parse(txfSpilleTid.getText()));
+				updateKampListe();
+			} catch (DateTimeParseException e) {
+				// TODO: handle exception
+				System.out.println("Fejl i formatering af dato eller tid " + e.getMessage());
+			}
+		}
+	}
+
+	private void updateKampListe() {
+		lvKampe.getItems().setAll(Storage.getKampe());
 	}
 }
