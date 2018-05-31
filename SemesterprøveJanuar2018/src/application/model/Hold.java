@@ -34,7 +34,14 @@ public class Hold {
 		for (Tutor tutor : tutors) {
 			for (Arrangement arrangement2 : tutor.getArrangementer()) {
 				if (arrangement.getDate().compareTo(arrangement2.getDate()) == 0) {
-					return true;
+					if ((arrangement.getStartTid().isBefore(arrangement2.getSlutTid())
+							&& arrangement.getStartTid().isAfter(arrangement2.getStartTid())
+							|| (arrangement.getSlutTid().isAfter(arrangement2.getStartTid())
+									&& arrangement.getSlutTid().isBefore(arrangement2.getSlutTid())))
+							|| (arrangement.getStartTid().isBefore(arrangement2.getStartTid())
+									&& arrangement.getSlutTid().isAfter(arrangement2.getSlutTid()))) {
+						return true;
+					}
 				}
 			}
 		}

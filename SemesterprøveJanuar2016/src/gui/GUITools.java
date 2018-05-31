@@ -5,7 +5,7 @@ import javafx.scene.control.TextField;
 
 public class GUITools {
 	public static final double WIDTH = 190;
-	public static final double MINWIDTH = 80;
+	public static final double MINWIDTH = 70;
 
 	public static Button stdButton(String tekst) {
 		Button btn = new Button(tekst);

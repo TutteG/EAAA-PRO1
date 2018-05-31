@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/SemesterprøveJanuar2018/src/gui/mainApp.java"/>
+<listEntry value="/SemesterprøveJanuar2016/src/gui/mainApp.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="gui.mainApp"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SemesterprøveJanuar2018"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="SemesterprøveJanuar2016"/>
 </launchConfiguration>
