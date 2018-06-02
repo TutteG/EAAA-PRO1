@@ -77,8 +77,8 @@ public class Service {
 		Plads plads4 = createPlads(4, Område.STANDARD);
 		Plads plads5 = createPlads(5, Område.BØRNE);
 
-		Plads konsolplads1 = createKonsolplads(1, Område.TURNERING, "Playstation 4");
-		Plads konsolplads2 = createKonsolplads(2, Område.TURNERING, "Xbox One");
+		Plads konsolplads1 = createKonsolplads(6, Område.VIP, "Playstation 4");
+		Plads konsolplads2 = createKonsolplads(7, Område.VIP, "Xbox One");
 
 		Arrangement arrangement1 = createArrangement("Dota 2 tournament", true);
 		Arrangement arrangement2 = createArrangement("CS:GO tournament", false);

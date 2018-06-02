@@ -71,8 +71,10 @@ public class Plads implements Comparable<Plads> {
 		if (område.compareTo(o.getOmråde()) == 0) {
 			if (nr < o.getNr()) {
 				return -1;
-			} else {
+			} else if (nr > o.getNr()) {
 				return 1;
+			} else {
+				return 0;
 			}
 		}
 		return område.compareTo(o.getOmråde());
