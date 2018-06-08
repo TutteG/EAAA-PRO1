@@ -76,9 +76,12 @@ public class Service {
 		Plads plads3 = createPlads(3, Område.STANDARD);
 		Plads plads4 = createPlads(4, Område.STANDARD);
 		Plads plads5 = createPlads(5, Område.BØRNE);
+		// i mangel af bedre..
+		plads5.compareTo(plads4);
 
 		Plads konsolplads1 = createKonsolplads(6, Område.VIP, "Playstation 4");
 		Plads konsolplads2 = createKonsolplads(7, Område.VIP, "Xbox One");
+		// i mangel
 
 		Arrangement arrangement1 = createArrangement("Dota 2 tournament", true);
 		Arrangement arrangement2 = createArrangement("CS:GO tournament", false);

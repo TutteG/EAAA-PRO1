@@ -25,20 +25,20 @@ public class Reservation implements Comparable<Reservation> {
 		return bane;
 	}
 
-	public LocalDate getDato() {
-		return dato;
-	}
-
-	public LocalTime getStartTid() {
-		return startTid;
-	}
-
 	public Medlem getBooker() {
 		return booker;
 	}
 
+	public LocalDate getDato() {
+		return dato;
+	}
+
 	public Medlem getMakker() {
 		return makker;
+	}
+
+	public LocalTime getStartTid() {
+		return startTid;
 	}
 
 	@Override

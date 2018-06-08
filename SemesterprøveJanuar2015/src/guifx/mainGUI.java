@@ -24,6 +24,7 @@ import storage.Storage;
 
 public class mainGUI extends Application {
 	public static void main(String[] args) {
+		Service.createSomeObjects();
 
 		Application.launch(args);
 	}
@@ -42,7 +43,6 @@ public class mainGUI extends Application {
 	}
 
 	private void initContent(BorderPane pane) {
-		Service.createSomeObjects();
 		GridPane gridPane = new GridPane();
 		initGridPane(gridPane);
 		pane.setCenter(gridPane);
