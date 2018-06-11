@@ -21,16 +21,16 @@ public class Bane {
 	}
 
 	public boolean isLedig(LocalDate dato, LocalTime startTid) {
-		boolean found = true;
+		boolean foundTid = true;
 		int i = 0;
-		while (found & i < reservationer.size()) {
+		while (foundTid & i < reservationer.size()) {
 			if (reservationer.get(i).getDato().equals(dato) && reservationer.get(i).getStartTid().equals(startTid)) {
-				found = false;
+				foundTid = false;
 			} else {
 				i++;
 			}
 		}
-		return found;
+		return foundTid;
 	}
 
 	public ArrayList<LocalTime> getLedigeTiderPaaDag(LocalDate dato) {

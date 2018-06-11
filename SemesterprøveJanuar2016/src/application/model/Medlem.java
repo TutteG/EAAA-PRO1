@@ -47,7 +47,9 @@ public class Medlem {
 		// TODO Auto-generated method stub
 		for (Reservation reservation : reservationer) {
 			if (LocalDate.now().isEqual(reservation.getDato())) {
-				if (LocalTime.now().isBefore(reservation.getStartTid().plusHours(1))) {
+				if (LocalTime.now().equals(reservation.getStartTid())
+						|| (LocalTime.now().isAfter(reservation.getStartTid())
+								&& LocalTime.now().isBefore(reservation.getStartTid().plusHours(1)))) {
 					return true;
 				}
 			}

@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.io.File"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-<fullyQualifiedTypeName name="java.time.LocalTime"/>
 <fullyQualifiedTypeName name="javafx.beans.value.ChangeListener"/>
 <fullyQualifiedTypeName name="application.model.Bane"/>
 <fullyQualifiedTypeName name="java.time.LocalDate"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="application.model.Område"/>
 <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
 <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.time.LocalTime"/>
 </qualifiedTypeNameHistroy>
