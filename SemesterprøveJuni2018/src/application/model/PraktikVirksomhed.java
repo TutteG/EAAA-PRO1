@@ -88,7 +88,7 @@ public class PraktikVirksomhed {
 
 	public void skrivTilFilKontrakter() {
 		try {
-			System.out.println(kontrakter);
+			// System.out.println(kontrakter);
 			File file = new File("kontrakter.txt");
 			PrintWriter printWriter = new PrintWriter(file);
 			for (PraktikKontrakt praktikKontrakt : kontrakter) {
